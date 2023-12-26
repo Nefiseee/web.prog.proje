@@ -1,0 +1,81 @@
+.jumbotron {
+    background-image: url("/UpLoad/v.jpg");
+    background-size:auto;
+
+}
+
+
+.card-title {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    line-height: 1.35em;
+    height: 34px;
+}
+
+.card-text {
+    font-size: 12px;
+}
+
+.product-price {
+    color: black;
+    font-weight: 700;
+    font-size: 20px; 
+}
+
+.description {
+    font-size: 12px;
+    height: 40px;
+}
+
+#product-details h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#write-review {
+    margin-left: -100px;
+}
+
+#product-price {
+    font-size: 26px;
+    color: red;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.card {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+
+.body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+main > .container {
+    padding: 60px 15px 0;
+}
+
+/* containerlar arasına boşluk bıraktım.*/
+
+.card-container {
+    display: flex;
+    gap: 40px;
+}
+
+.card {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.nav-tabs {
+    flex-direction: column;
+}

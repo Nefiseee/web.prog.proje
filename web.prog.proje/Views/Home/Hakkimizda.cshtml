@@ -1,0 +1,26 @@
+﻿@model IEnumerable<web.prog.proje.Models.Hakkimzda>
+@{
+    ViewBag.Title = "Lion baby";
+}
+
+
+<div class="bd-example">
+    <table class="table table-bordered table-hover">
+        <thead>
+        <tr>
+            <th class="table-active" scope="col">Link</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var hakkimizda in Model)
+        {
+            <tr>
+                <td> <a href="@hakkimizda.Link">@hakkimizda.Link</a></td>
+
+            </tr>
+        }
+        </tbody>
+
+    </table>
+</div>

@@ -1,0 +1,31 @@
+﻿@using web.prog.proje.Models
+@model IEnumerable<ProductModel>
+
+<div class="row">
+
+    @foreach (var urun in Model)
+    {
+
+
+        <div class="col-md-4 mt-5">
+            <div class="card">
+                <img class="card-img-top" src="/UpLoad/@urun.Image" alt="@urun.Name">
+                <div class="card-body">
+                    <h5 class="card-title">@urun.Name</h5>
+                    <p class="card-text pt-2 description">@urun.Description</p>
+                    <a href="/Home/Details/@urun.Id">@urun.Name</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted product-price">
+                        @urun.Price
+                        <i class="fa fa-usd" aria-hidden="true"></i>
+                    </small>
+                    <a href="/Home/Details/@urun.Id" class="btn btn-success btn-sm float-end">Ürünü İncele</a>
+                </div>
+            </div>
+
+
+        </div>
+    }
+</div>
+

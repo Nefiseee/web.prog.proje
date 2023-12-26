@@ -1,0 +1,99 @@
+﻿@using web.prog.proje.Entity;
+@model Product
+@{
+    ViewBag.Title = "Details";
+}
+
+<div id="product-details" class="container pb-5">
+
+<div class="row">
+    <div class="col-md-6 mt-5 text-center">
+        <img src="/UpLoad/@Model.Image" class="img-fluid rounded mx-auto d-block w-50" alt="Resim">
+    </div>
+
+    <div class="col-md-3 mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>@Model.Name</h1>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                @if (Model.IsApproved)
+                {
+                    <span class="badge badge-primary">Stokta</span>
+                }
+                else
+                {
+                    <span class="badge badge-danger">Stokta yok</span>
+                }
+                <span class="product-number">#11111</span>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div id="description">
+                    @Model.Description
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span class="badge badge-success mt-5">53</span>
+                    </div>
+                    <div id="write-review" class="col-md-4">write a review </div>
+                    <a href="#"></a>
+                </div>
+
+                <div class="row mt-1">
+                    <div class="col-md-12">
+                        <h4 id="produckt-price">@Model.Price $ </h4>
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <div class="col-md-12">
+                        <button class="btn btn-outline-success">
+                            <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="row mt-5">
+    <div class="col-md-12">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+        </ul>
+
+    </div>
+
+
+
+</div>
+</div>
