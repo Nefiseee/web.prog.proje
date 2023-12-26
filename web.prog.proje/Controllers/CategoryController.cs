@@ -6,7 +6,6 @@ using web.prog.proje.Entity;
 
 namespace web.prog.proje.Controllers
 {
-    [Authorize(Roles = "admin")]
     public class CategoryController : Controller
     {
         private DataContext db = new DataContext();

@@ -10,7 +10,7 @@ using web.prog.proje.Entity;
 
 namespace web.prog.proje.Controllers
 {
-    [Authorize(Roles = "admin")]
+ 
     public class ProductController : Controller
     {
         private DataContext db = new DataContext();
